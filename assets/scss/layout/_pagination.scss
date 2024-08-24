@@ -1,0 +1,7 @@
+.page-link {
+  color: #198754;
+
+  &:hover {
+    color: darken($secondary-2,15%) !important;
+  }
+}

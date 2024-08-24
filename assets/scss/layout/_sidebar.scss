@@ -1,0 +1,41 @@
+.aside {
+  width: 296px;
+  background-color: #F8F9FA;
+
+  &__item {
+    position: relative;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.active {
+  color: #198754;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    border-left: 4px solid #198754;
+    top: 0;
+    bottom: 0;
+    left: -32px;
+  }
+}
+
+.sidebar {
+  &-container {
+    min-height: 100vh;
+    height: 100%;
+    padding: 32px;
+  }
+
+  &__logo {
+    width: 151px;
+    height: 40px;
+    margin-bottom: 32px;
+  }
+}
