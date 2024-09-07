@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-secondary">
+      <%- include('./layout/header'); -%>
+      <div class="sign-up-container">
+        <section class="sign-up-section bg-white">
+          <h1 class="fs-4 text-primary mb-40">登入</h1>
+          <label class="fs-6 text-dark-1 fw-bold" for="account">會員帳號</label>
+          <input class="sign-up__input w-100 mb-3" type="text" placeholder="請輸入會員帳號">
+        
+          <label class="fs-6 text-dark-1 fw-bold" for="account">密碼</label>
+          <input class="sign-up__input w-100 mb-40" type="text" placeholder="請輸入密碼">
+          
+          <button class="sign-up__button bg-primary w-100 rounded-pill text-white mb-5" type="button">立即登入
+            <i class="bi bi-arrow-right ms-2"></i>
+          </button>
+          <div class="sign-up-method">
+            <p class="sign-up-method__text fs-6">
+              或以其他方式登入
+            </p>
+          </div>
+          <button class="sign-up__button w-100 mb-2" type="button">
+            <img class="sign-up__icon" src="../assets/icons/icon_google.svg" alt="google">
+            使用 Google 登入
+          </button>
+          <button class="sign-up__button w-100 mb-40" type="button">
+            <img class="sign-up__icon" src="../assets/icons/icon_facebook.svg" alt="Facebook">
+            使用 Facebook 登入
+          </button>
+          <p class="text-center fs-6">已經是會員了？
+            <span class="ms-2">
+              <a href="#">點此註冊</a>
+            </span>
+          </p>
+        </section>
+      </div>
+      
+      
+      <%- include('./layout/footer'); -%>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
