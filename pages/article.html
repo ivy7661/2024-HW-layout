@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-secondary">
+      <%- include('./layout/header'); -%>
+      <div class="container">
+        <div class="main-bg"></div>
+      </div>
+      <div class="container-article">
+        <p class="breadcrumb fs-6 text-gray-1">
+          首頁 / 所有文章 /
+          <span class="text-primary"> &nbsp;私人島嶼的露營奇遇記</span>
+        </p>
+        <h1 class="mb-3 article__title">私人島嶼的露營奇遇記</h1>
+        <p class="article__date fs-6">2024 / 5 / 1</p>
+        <main>
+          <div class="article-preview mb-40">
+            <p class="article__text fs-6">嗨！我是秘境尋蹤小編 Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。</p>
+            <p class="article__text fs-6">這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。</p>
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024-week6/content-1.png" alt="content-1">
+            <div class="article__mask"></div>
+          </div>
+          <div class="expand-container d-flex flex-column justify-content-center align-items-center">
+            <p class="fs-6 text-center article__text-bold mb-3">本篇為會員專屬文章，馬上訂閱瀏覽所有內容！</p>
+            <button class="article__button btn btn-primary rounded-pill text-light" type="button">我要訂閱
+              <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </main>
+      <%- include('./layout/read-more'); -%>
+      </div>
+      
+      <%- include('./layout/footer'); -%>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -8,6 +8,12 @@
 .text-secondary-2 {
   color: $secondary-2;
 }
+.text-secondary-3 {
+  color: $secondary-3;
+}
+.text-secondary-4 {
+  color: $secondary-4;
+}
 
 .text-gray-1 {
   color: $gray-1;
@@ -25,7 +31,11 @@
   font-size: 14px;
 }
 
+// margin
 
+.mb-40 {
+  margin-bottom: 40px;
+}
 
 
 

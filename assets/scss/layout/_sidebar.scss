@@ -4,25 +4,25 @@
 
   &__item {
     position: relative;
+
+    &-active {
+      color: #198754;
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        border-left: 4px solid #198754;
+        top: 0;
+        bottom: 0;
+        left: -32px;
+      }
+    }
   }
 
   &__avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
-}
-
-.active {
-  color: #198754;
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    border-left: 4px solid #198754;
-    top: 0;
-    bottom: 0;
-    left: -32px;
   }
 }
 
